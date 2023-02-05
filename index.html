@@ -75,4 +75,21 @@
     </table>
     </body>
 </html>
+<html>
+   <hr>
+   <h1> CODE DISPLAY </h1>
+<body>
+    <blockquote> How to get current url in php on stcak overflow? </blockquote>
+    <a href= https://stackoverflow.com/questions/6768793/get-the-full-url-in-php > Question link </a> 
+    <pre>  
+HTML...
+function getUrl() {
+    $url  = @( $_SERVER["HTTPS"] != 'on' ) ? 'http://'.$_SERVER["SERVER_NAME"] :  'https://'.$_SERVER["SERVER_NAME"];
+    $url .= ( $_SERVER["SERVER_PORT"] !== 80 ) ? ":".$_SERVER["SERVER_PORT"] : "";
+    $url .= $_SERVER["REQUEST_URI"];
+    return $url;
+  }
+  </pre>
+</body>
+</html>
 
